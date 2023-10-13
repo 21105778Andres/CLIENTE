@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CLIENTES.Vistas.RESPUESTA">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="help.png"/>
+            <StackLayout BackgroundColor="Lime">
+                <Label Text="MUCHAS GRACIAS POR PARTICIPAR!"
+                   FontSize="40"
+                   TextColor="Red"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CLIENTES.Vistas.EncuestaFutbol">
+    <ScrollView BackgroundColor="Aqua">
+        
+        <Grid>
+            <Image Source="soccer.png"/>
+            <StackLayout>
+                <Label Text="ENCUESTA DE FUTBOL" 
+               HorizontalOptions="CenterAndExpand" 
+               Margin="0,20,0,10" 
+               FontSize="Large"
+               BackgroundColor="Lime"
+               TextColor="White"/>
+
+                <Label Text="¿Cuál es tu equipo favorito?"
+               TextColor="Red"
+               FontSize="20"/>
+                <Entry Placeholder="Equipo"
+                   HorizontalOptions="StartAndExpand"
+                   TextColor="Black" />
+
+                <StackLayout>
+                    <Label Text="¿De los 4 mejores del mundo, cual te parece mejor?"
+                           TextColor="Red"
+               FontSize="20" Margin="0,0,0,0"/>
+                    <Picker x:Name="Seleccionar" >
+                        <Picker.Items >
+                            <x:String>Messi</x:String>
+                            <x:String>Cristiano Ronaldo</x:String>
+                            <x:String>Haland</x:String>
+                            <x:String>Mbape</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </StackLayout>
+
+                <Label Text="¿Cuál es tu jugador favorito?"
+                       Margin="0,20,0,0"
+               TextColor="Red"
+               FontSize="20"/>
+                <Entry Placeholder="Jugador"
+                   HorizontalOptions="StartAndExpand"
+                   TextColor="Black" />
+
+                <Label Text="¿Cual de estos 4 equipos es el mejor para ti?" 
+                   TextColor="Red"
+                   Margin="0,20,0,0"
+                   FontSize="20"/>
+                <StackLayout Orientation="Horizontal">
+                    <RadioButton  x:Name="Pre1"/>
+                    <Label Text="Real Madrid" TextColor="Red" />
+                    <RadioButton  x:Name="Pre2"/>
+                    <Label Text="Barcelona" TextColor="Red" />
+                    <RadioButton  x:Name="Pre3"/>
+                    <Label Text="PSG" TextColor="Red"/>
+                    <RadioButton  x:Name="Pre4"/>
+                    <Label Text="Liverpool" TextColor="Red" />
+                </StackLayout>
+
+                <Label Text="¿Jugaste alguna final de un torneo?"
+                   TextColor="Red"
+                   Margin="0,20,0,0"
+                   FontSize="20"/>
+                <StackLayout Orientation="Horizontal">
+                    <RadioButton  x:Name="P1"/>
+                    <Label Text="SI" />
+                    <RadioButton  x:Name="P2"/>
+                    <Label Text="NO" />
+                </StackLayout>
+
+                <Button Text="Enviar Encuesta Calicatura" 
+                        Clicked="Button_Clicked"
+                        HorizontalOptions="CenterAndExpand"
+                        CornerRadius="40"
+                        Margin="0,20,0,30" 
+                        BorderWidth="5" 
+                        TextColor="Blue"/>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+
+
+</ContentPage>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CLIENTES.Vistas.EncuestaModa">
+    
+        <ScrollView>
+        <Grid Background="#DOECE7">
+            <Image Source="handbag.png" />
+            <StackLayout Margin="10">
+                <Label Text="ENCUESTA DE MODA" 
+               HorizontalOptions="CenterAndExpand"
+               Margin="0,20,0,20"
+               BackgroundColor="#FF0000"        
+               FontSize="Large" />
+                <Label Text="¿Cual es tu color favorito para vestir?" 
+                       FontSize="20"/>
+                <StackLayout Orientation="Horizontal" Margin="0,0,0,20">
+                    <RadioButton x:Name="Pregunta1Opcion1" FontSize="5" />
+                    <Label Text="Blanco" />
+                    <RadioButton x:Name="Pregunta1Opcion2" FontSize="5"/>
+                    <Label Text="Negro" />
+                    <RadioButton x:Name="Pregunta1Opcion3" FontSize="5" />
+                        <Label Text="Gris" />   
+                </StackLayout>
+
+
+                <Label Text="En que mano deberia de cargar el bolso una mujer?" FontSize="20" Margin="0,20,0,0"/>
+                <StackLayout Orientation="Horizontal" Margin="0,0,0,20">
+
+                    <RadioButton x:Name="pre1" FontSize="5" />
+                    <Label Text="Derecha" />
+                    <RadioButton x:Name="pre2" FontSize="5"/>
+                    <Label Text="Izquierda" /> 
+                </StackLayout>
+
+                <StackLayout>
+                <Label Text="¿De que moda te consideras?"
+                       FontSize="20" Margin="0,0,0,0"/>
+                <Picker x:Name="Seleccionar" >
+                    <Picker.Items >
+                        <x:String>Casual</x:String>
+                        <x:String>Oscuro</x:String>
+                        <x:String>Blanco</x:String>
+                        <x:String>Brillante</x:String>
+                        </Picker.Items>
+                </Picker>
+                </StackLayout>
+
+                <Label Text="¿Que prenda es un error comprar?" FontSize="20" Margin="0,20,0,0" />
+                <Entry Placeholder="Prenda"
+                   HorizontalOptions="StartAndExpand"
+                   TextColor="Black" />
+
+
+                <Label Text="Cuantos zapatos crees que se deberia tener?" FontSize="20" Margin="0,20,0,0"/>
+                <StackLayout Orientation="Horizontal" Margin="0,0,0,20">
+
+                    <RadioButton x:Name="p1" FontSize="5" />
+                    <Label Text="3" />
+                    <RadioButton x:Name="p2" FontSize="5"/>
+                    <Label Text="6" />
+                    <RadioButton x:Name="p3" FontSize="5" />
+                    <Label Text="12" 
+                 />
+                </StackLayout>
+
+
+                <Button Text="Enviar Encuesta Moda"  
+                        Clicked="Button_Clicked"
+                        HorizontalOptions="CenterAndExpand"
+                        BorderColor="Aquamarine"
+                        Margin="0,0,0,20" />
+        </StackLayout>
+        </Grid>
+    </ScrollView>
+   
+</ContentPage>

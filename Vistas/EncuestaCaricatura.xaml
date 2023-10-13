@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CLIENTES.Vistas.EncuestaCaricatura"
+             NavigationPage.HasNavigationBar="True">
+    <ScrollView BackgroundColor="Aqua">
+        <Grid >
+            <Image Source="axe.png"/>
+            <StackLayout>
+            <Label Text="ENCUESTA DE CALICATURA" 
+                   HorizontalOptions="CenterAndExpand" 
+                   Margin="0,20,0,10" 
+                   FontSize="Large"
+                   BackgroundColor="Navy"
+                   TextColor="White"/>
+
+           
+            <Label Text="¿Cuál es tu Calicatura favorita?"
+                   TextColor="Red"
+                   FontSize="20"/>
+                <Entry Placeholder="Calicatura"
+                       HorizontalOptions="StartAndExpand"
+                       TextColor="White" />
+
+                <Label Text="¿Cuantas horas al dia dedicas a ver tu calicaturas?" 
+                       TextColor="Red"
+                       Margin="0,20,0,0"
+                       FontSize="20"/>
+                <StackLayout Orientation="Horizontal">
+                <RadioButton  x:Name="Pregunta2Opcion1"/>
+                <Label Text="2 horas" />
+                <RadioButton  x:Name="Pregunta2Opcion2"/>
+                <Label Text="4 horas" 
+                      />
+                    <RadioButton  x:Name="P3"/>
+                    <Label Text="6 horas" />
+                </StackLayout>
+
+                <Label Text="¿Ya jugaste tu calicatura favorita en videojuego?"
+                       TextColor="Red"
+                       Margin="0,20,0,0"
+                       FontSize="20"/>
+                <StackLayout Orientation="Horizontal">
+                <RadioButton  x:Name="P1"/>
+                    <Label Text="SI" />
+                    <RadioButton  x:Name="P2"/>
+                    <Label Text="NO" />
+                </StackLayout>
+
+                <Button Text="Enviar Encuesta Futbol" 
+                           Clicked="Button_Clicked"
+                            HorizontalOptions="CenterAndExpand"
+                            CornerRadius="40"
+                            Margin="0,20,0,30" />
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>
